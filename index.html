@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>Jellatrix</title>
+    <title>FETZ Games</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Jellatrix is a casual physics-based puzzle game with online leaderboards powered by Google Play Games Services." />
+    <meta name="description" content="Indie games by FETZ Games" />
 
     <style>
         body {
@@ -13,68 +13,92 @@
                          Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
             background-color: #f6f7fb;
             color: #222;
-            line-height: 1.6;
         }
 
         .container {
-            max-width: 720px;
+            max-width: 960px;
             margin: 0 auto;
             padding: 40px 20px;
         }
 
         h1 {
             font-size: 2.4rem;
-            margin-bottom: 10px;
+            margin-bottom: 30px;
         }
 
-        p {
-            font-size: 1.05rem;
-            margin-bottom: 16px;
+        .games {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 24px;
         }
 
-        .footer {
-            margin-top: 40px;
-            font-size: 0.9rem;
-            color: #666;
+        .game-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
         }
 
-        a {
+        .game-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+        }
+
+        .game-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 14px;
+        }
+
+        .game-card h2 {
+            font-size: 1.4rem;
+            margin: 0 0 8px 0;
+        }
+
+        .game-card p {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 14px;
+        }
+
+        .game-card a {
             color: #4a6cf7;
+            font-weight: 500;
             text-decoration: none;
         }
 
-        a:hover {
+        .game-card a:hover {
             text-decoration: underline;
         }
 
-        .links a {
-            margin-right: 16px;
+        .footer {
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #666;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Jellatrix</h1>
+        <h1>FETZ Games</h1>
 
-        <p>
-            Jellatrix is a casual physics-based puzzle game inspired by classic match and
-            falling-block mechanics, enhanced with soft-body interactions and playful visuals.
-        </p>
-
-        <p>
-            The game uses <strong>Google Play Games Services</strong> to provide online leaderboards
-            and player authentication.
-        </p>
-
-        <div class="links">
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="terms.html">Terms of Service</a>
+        <div class="games">
+            <!-- Jellatrix -->
+            <div class="game-card">
+                <img src="jellatrix/icon_512.png" alt="Jellatrix icon" />
+                <h2>Jellatrix</h2>
+                <p>
+                    A casual physics-based puzzle game with soft-body blocks,
+                    colorful visuals, and online leaderboards.
+                </p>
+                <a href="jellatrix/index.html">Open project →</a>
+            </div>
         </div>
 
         <div class="footer">
-            <p>
-                © 2026 Jellatrix. All rights reserved.
-            </p>
+            <p>© 2026 FETZ Games</p>
         </div>
     </div>
 </body>
